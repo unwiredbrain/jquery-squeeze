@@ -30,12 +30,11 @@
     Squeeze.prototype.init = function(selector) {
         var that = this;
         that.$menu = $(selector).addClass(that.options.menuClass);
-        that.$select = $("<select/>")
-            .addClass(that.options.selectClass)
-            .insertAfter(that.$menu)
-            .on("change", function () {
-                window.location = $(this).find("option:selected").val();
-            });
+        that.$select = $("<select/>", {
+            "class": that.options.selectClass
+        }).insertAfter(that.$menu).on("change", function () {
+            window.location = $(this).find("option:selected").val();
+        });
         $("a", that.$menu).each(function () {
             var $this = $(this),
                 isActive = $this.parent().hasClass(that.options.activeClass),
