@@ -1,5 +1,5 @@
 /*!
- * jquery.squeeze.js v1.0.0 (2013-01-16)
+ * jquery.squeeze.js v1.0.1 (2013-02-12)
  * 
  * Copyright 2013 Massimo Lombardo (@unwiredbrain)
  * 
